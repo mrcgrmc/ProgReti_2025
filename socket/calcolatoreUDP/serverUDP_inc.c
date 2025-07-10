@@ -26,7 +26,7 @@ int main(void) {
                hostAddress, port, request);
 
         if (sscanf(request, "%u %u %15s", &a, &b, op) != 3) {
-            fprintf(stderr, "[SERVER] Formato errato nella request\n");
+            fprintf(stderr, "[SERVER] Formato errato nella richiesta\n");
             continue;
         }
 

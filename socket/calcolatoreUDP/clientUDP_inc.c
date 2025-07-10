@@ -25,7 +25,7 @@ int main(void) {
     request[strcspn(request, "\n")] = '\0';
 
     if (sscanf(request, "%u %u %15s", &a, &b, op) != 3) {
-        fprintf(stderr, "Formato errato, ci aspettavamo: <int> <int> <op>\n");
+        fprintf(stderr, "Formato errato!\n");
         return 1;
     }
 
